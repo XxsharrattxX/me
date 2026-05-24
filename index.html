@@ -136,6 +136,34 @@
             text-decoration: underline;
             text-underline-offset: 4px;
         }
+        
+        /* 社交媒体图标样式 */
+        .social-icons {
+            margin-top: 24px;
+            display: flex;
+            gap: 16px;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: transparent;
+            color: var(--text-medium);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
         .view-portfolio {
             margin-top: 64px;
         }
@@ -325,6 +353,8 @@
     <div class="page-dot" data-target="portfolio-2"></div>
     <div class="page-dot" data-target="portfolio-3"></div>
     <div class="page-dot" data-target="portfolio-4"></div>
+    <div class="page-dot" data-target="portfolio-5"></div>
+    <div class="page-dot" data-target="portfolio-6"></div>
 </div>
 
 <section id="about" class="section">
@@ -338,8 +368,20 @@
         <div class="skills">Unity / C# / Shader / Blender / 3ds Max / Python</div>
         <div class="education">教育背景：陕西科技大学 | 艺术与科技 | 2028年毕业</div>
         <div class="contact">
-            邮箱：<a href="mailto:guanzhongyi9955@foxmail.com">guanzhongyi9955@foxmail.com</a> | 
-            GitHub：<a href="https://github.com/XxsharrattxX" target="_blank">XxsharrattxX</a>
+            邮箱：<a href="mailto:guanzhongyi9955@foxmail.com">guanzhongyi9955@foxmail.com </a> |
+			<a href="mailto:guanzhongyi9955@gmail.com">guanzhongyi9955@gmail.com </a>
+        </div>
+        <div class="social-icons">
+            <!-- PNG图标占位符 - 请将您设计的PNG图标替换以下链接 -->
+            <a href="https://github.com/XxsharrattxX" target="_blank" class="social-icon" title="GitHub">
+                <img src="./icon/github.png" alt="GitHub" width="20" height="20">
+            </a>
+            <a href="https://space.bilibili.com/37365795" target="_blank" class="social-icon" title="B站">
+                <img src="./icon/bilibili.png" alt="B站" width="20" height="20">
+            </a>
+            <a href="https://www.xiaohongshu.com/user/profile/5ff5bb93000000000100b3e4" target="_blank" class="social-icon" title="小红书">
+                <img src="./icon/rednote.png" alt="小红书" width="20" height="20">
+            </a>
         </div>
         <div class="view-portfolio">
             <a href="#portfolio-1" class="portfolio-btn">查看作品集</a>
@@ -355,14 +397,14 @@
     <div class="portfolio-content">
         <div class="project">
             <div class="project-image">
-                <img src="https://s.snappable.media/e07af7aa4abc5687af0a25437b8828a7.jpg" alt="低多边形建筑场景">
+                <img src="https://s.snappable.media/e07af7aa4abc5687af0a25437b8828a7.jpg" alt="项目标题">
                 <video src="https://s.snappable.media/2cf7cb2a5d123b0938c32790d0440561.mp4" muted loop playsinline preload="none"></video>
                 <div class="video-toggle">查看视频</div>
             </div>
             <div class="project-info">
-                <h2>低多边形建筑场景</h2>
-                <div class="description">使用Blender创建的低多边形风格建筑场景，展示了高效的建模技巧和色彩搭配能力。</div>
-                <div class="tech">技术：Blender | Substance Painter | Unity</div>
+                <h2>项目标题</h2>
+                <div class="description">项目描述...</div>
+                <div class="tech">技术：技术栈1 | 技术栈2 | 技术栈3...</div>
             </div>
         </div>
     </div>
@@ -372,14 +414,14 @@
     <div class="portfolio-content">
         <div class="project">
             <div class="project-image">
-                <img src="https://s.snappable.media/e07af7aa4abc5687af0a25437b8828a7.jpg" alt="实时着色器编辑器">
+                <img src="https://s.snappable.media/e07af7aa4abc5687af0a25437b8828a7.jpg" alt="项目标题">
                 <video src="https://s.snappable.media/2cf7cb2a5d123b0938c32790d0440561.mp4" muted loop playsinline preload="none"></video>
                 <div class="video-toggle">查看视频</div>
             </div>
             <div class="project-info">
-                <h2>实时着色器编辑器</h2>
-                <div class="description">为Unity开发的可视化着色器编辑工具，允许艺术家实时调整材质参数并预览效果。</div>
-                <div class="tech">技术：Unity | HLSL | C# | UIElements</div>
+                <h2>项目标题</h2>
+                <div class="description">项目描述...</div>
+                <div class="tech">技术：技术栈1 | 技术栈2 | 技术栈3...</div>
             </div>
         </div>
     </div>
@@ -389,14 +431,14 @@
     <div class="portfolio-content">
         <div class="project">
             <div class="project-image">
-                <img src="https://s.snappable.media/e07af7aa4abc5687af0a25437b8828a7.jpg" alt="纹理绘制工具">
+                <img src="https://s.snappable.media/e07af7aa4abc5687af0a25437b8828a7.jpg" alt="项目标题">
                 <video src="https://s.snappable.media/2cf7cb2a5d123b0938c32790d0440561.mp4" muted loop playsinline preload="none"></video>
                 <div class="video-toggle">查看视频</div>
             </div>
             <div class="project-info">
-                <h2>纹理绘制工具</h2>
-                <div class="description">基于Unity开发的实时纹理绘制工具，支持多层纹理混合和笔刷自定义功能。</div>
-                <div class="tech">技术：Unity | C# | Compute Shader | UGUI</div>
+                <h2>项目标题</h2>
+                <div class="description">项目描述...</div>
+                <div class="tech">技术：技术栈1 | 技术栈2 | 技术栈3...</div>
             </div>
         </div>
     </div>
@@ -406,19 +448,96 @@
     <div class="portfolio-content">
         <div class="project">
             <div class="project-image">
-                <img src="https://s.snappable.media/e07af7aa4abc5687af0a25437b8828a7.jpg" alt="程序化地形生成">
+                <img src="https://s.snappable.media/e07af7aa4abc5687af0a25437b8828a7.jpg" alt="项目标题">
                 <video src="https://s.snappable.media/2cf7cb2a5d123b0938c32790d0440561.mp4" muted loop playsinline preload="none"></video>
                 <div class="video-toggle">查看视频</div>
             </div>
             <div class="project-info">
-                <h2>程序化地形生成</h2>
-                <div class="description">使用噪声算法和GPU加速实现的大规模程序化地形生成系统，支持实时编辑和预览。</div>
-                <div class="tech">技术：Unity | HLSL | Compute Shader | Perlin Noise</div>
+                <h2>项目标题</h2>
+                <div class="description">项目描述...</div>
+                <div class="tech">技术：技术栈1 | 技术栈2 | 技术栈3...</div>
             </div>
         </div>
     </div>
+</section>
+
+<section id="portfolio-5" class="section">
+    <div class="portfolio-content">
+        <div class="project">
+            <div class="project-image">
+                <img src="https://s.snappable.media/e07af7aa4abc5687af0a25437b8828a7.jpg" alt="项目标题">
+                <video src="https://s.snappable.media/2cf7cb2a5d123b0938c32790d0440561.mp4" muted loop playsinline preload="none"></video>
+                <div class="video-toggle">查看视频</div>
+            </div>
+            <div class="project-info">
+                <h2>项目标题</h2>
+                <div class="description">项目描述...</div>
+                <div class="tech">技术：技术栈1 | 技术栈2 | 技术栈3...</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio-6" class="section">
+    <div class="portfolio-content">
+        <div class="project">
+            <div class="project-image">
+                <img src="https://s.snappable.media/e07af7aa4abc5687af0a25437b8828a7.jpg" alt="项目标题">
+                <video src="https://s.snappable.media/2cf7cb2a5d123b0938c32790d0440561.mp4" muted loop playsinline preload="none"></video>
+                <div class="video-toggle">查看视频</div>
+            </div>
+            <div class="project-info">
+                <h2>项目标题</h2>
+                <div class="description">项目描述...</div>
+                <div class="tech">技术：技术栈1 | 技术栈2 | 技术栈3...</div>
+            </div>
+        </div>
+    </div>
+
     <div class="footer">© 2025 管重翌</div>
 </section>
+
+<!-- 
+    如何添加新的作品集项目：
+    
+    1. 在上面的</section>标签后，复制以下代码块并粘贴（确保在</body>标签之前）：
+    
+    <section id="portfolio-5" class="section">
+        <div class="portfolio-content">
+            <div class="project">
+                <div class="project-image">
+                    <img src="图片链接" alt="项目标题">
+                    <video src="视频链接" muted loop playsinline preload="none"></video>
+                    <div class="video-toggle">查看视频</div>
+                </div>
+                <div class="project-info">
+                    <h2>项目标题</h2>
+                    <div class="description">项目描述文字...</div>
+                    <div class="tech">技术：技术栈1 | 技术栈2 | 技术栈3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    2. 修改以下内容：
+       - id="portfolio-5"：将数字5改为下一个序号（如6,7,8...）
+       - src="图片链接"：替换为你的项目图片URL
+       - src="视频链接"：替换为你的项目视频URL（如果没有视频，可以删除video标签）
+       - alt="项目标题"：替换为你的项目标题
+       - <h2>项目标题</h2>：替换为你的项目标题
+       - <div class="description">...</div>：替换为你的项目描述
+       - <div class="tech">...</div>：替换为你的项目技术栈
+    
+    3. 在页面指示器中添加新的点：
+       - 找到<div class="page-indicator">部分
+       - 在最后一个<div class="page-dot">后添加：
+         <div class="page-dot" data-target="portfolio-5"></div>
+       - 确保data-target的值与你新添加的section的id一致
+    
+    4. 如果不需要视频功能，可以删除以下代码：
+       <video src="视频链接" muted loop playsinline preload="none"></video>
+       <div class="video-toggle">查看视频</div>
+-->
 
 <script>
     // 核心修复：Blob强制下载函数，100%可靠
@@ -504,9 +623,45 @@
         });
     });
 
+    /**
+     * 平滑滚动到指定区域
+     * @param {string} targetId - 目标区域的ID
+     * 
+     * 这个函数实现了平滑滚动效果，当点击导航链接或查看作品集按钮时会触发
+     * 使用了缓动函数来使滚动更加自然流畅
+     */
     function smoothScrollTo(targetId) {
         const target = document.getElementById(targetId);
-        window.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
+        if (!target) return;
+
+        const targetPosition = target.offsetTop;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        const duration = 1000; // 滚动持续时间（毫秒）
+        let startTime = null;
+
+        // 动画函数
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, run);
+            
+            if (timeElapsed < duration) {
+                requestAnimationFrame(animation);
+            }
+        }
+
+        // 缓动函数，使滚动更加自然
+        function easeInOutQuad(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+
+        // 开始动画
+        requestAnimationFrame(animation);
     }
 
     document.querySelectorAll('.nav-links a[href^="#"]').forEach(a => {
